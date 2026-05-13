@@ -234,4 +234,4 @@ waiting on the wiring described above.
 
 ## License
 
-MIT. See [License.txt](License.txt).
+All I ask is that you try and keep your own code open source so other people can learn and grow.
