@@ -1,30 +1,27 @@
 /*
- * (UdpHost.cs)
+ * (IPacketWritable.cs)
  *------------------------------------------------------------
- * Created - 5/12/2026 2:01:33 PM
+ * Created - 5/16/2026 9:27:30 PM
  * Created by - Seliris
  *-------------------------------------------------------------
  */
 
-using LiteNetLib;
 using LiteNetLib.Utils;
-using Stratum.Networking.Dispatch;
-using Stratum.SystemTools.Logger;
-using System.Collections.Concurrent;
-using System.Net;
 
-namespace Stratum.Networking.Udp;
-
-public sealed class UdpHost
+namespace Stratum.Shared.Networking
 {
-    
+
+    public interface IPacketWritable
+    {
+        uint TypeId { get; }
+        void Serialize(NetDataWriter writer);
+    }
+
 }
-
-
 
 /*
  *------------------------------------------------------------
- * (UdpHost.cs)
+ * (IPacketWritable.cs)
  * See License.txt for licensing information.
  *-----------------------------------------------------------
  */
