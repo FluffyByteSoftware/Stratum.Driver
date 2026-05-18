@@ -6,37 +6,36 @@
  *-------------------------------------------------------------
  */
 
-namespace Stratum.Networking.Dispatch
-{
+namespace Stratum.Networking.Dispatch;
 
+
+/// <summary>
+/// Represents the result of a dispatch operation.
+/// </summary>
+public enum DispatchOutcome
+{
     /// <summary>
-    /// Represents the result of a dispatch operation.
+    /// Represents a successful result.
     /// </summary>
-    public enum DispatchOutcome
-    {
-        /// <summary>
-        /// Represents a successful result.
-        /// </summary>
-        Ok,
-        /// <summary>
-        /// Represents an unknown type.
-        /// </summary>
-        UnknownType,
-        /// <summary>
-        /// Invalid packet.
-        /// </summary>
-        InvalidPacket,
-        /// <summary>
-        /// Represents errors that occur during handler execution.
-        /// </summary>
-        HandlerException
-    }
+    Ok,
+    /// <summary>
+    /// Represents an unknown type.
+    /// </summary>
+    UnknownType,
+    /// <summary>
+    /// Invalid packet.
+    /// </summary>
+    InvalidPacket,
+    /// <summary>
+    /// Represents errors that occur during handler execution.
+    /// </summary>
+    HandlerException
 }
 
 
 /*
- *------------------------------------------------------------
- * (DispatchOutcome.cs)
- * See License.txt for licensing information.
- *-----------------------------------------------------------
- */
+*------------------------------------------------------------
+* (DispatchOutcome.cs)
+* See License.txt for licensing information.
+*-----------------------------------------------------------
+*/
