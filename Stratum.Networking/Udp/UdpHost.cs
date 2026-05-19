@@ -146,7 +146,7 @@ public sealed class UdpHost : INetEventListener, ITickable
         }
         catch(Exception ex)
         {
-            Scribe.Pump(new ScribeMessage(ScribeSeverity.Error,
+            Scribe.Pump(new ScribeMessage(ScribeSeverity.Warn,
                 $"UDP send failed on connection {connection.Id} " +
                 $"(0x{packet.TypeId:X8}).",
                 ex));
